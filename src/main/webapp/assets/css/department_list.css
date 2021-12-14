@@ -36,7 +36,7 @@ color: #333;}
 .table_area tbody td:first-child{border-radius: 5px 0 0 5px;}
 .table_area tbody td:last-child {border-radius: 0 5px 5px 0;}
 
-.talbe_area tbody td button {margin: 0 8px; background-color: transparent; border: 0; padding: 0;
+.table_area tbody td button {margin: 0 8px; background-color: transparent; border: 0; padding: 0;
 font-size: 20px; cursor: pointer;}
 .modify_btn {color:rgb(73, 73, 93);}
 .delete_btn {color: rgb(224, 81, 81);}
@@ -93,5 +93,7 @@ border-radius: 999px; display: inline-block;}
 }
 .btn_area #add_dep {background-color: #999;}
 .btn_area #add_dep:hover {background-color: #333;}
+.btn_area #modify_dep {background-color: #999;}
+.btn_area #modify_dep:hover {background-color: #333;}
 .btn_area #cancel_dep {background-color: rgb(255, 194, 194);}
 .btn_area #cancel_dep:hover {background-color: rgb(255, 83, 83);}
