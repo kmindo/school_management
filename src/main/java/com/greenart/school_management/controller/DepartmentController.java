@@ -3,6 +3,7 @@ package com.greenart.school_management.controller;
 import java.util.Map;
 
 import com.greenart.school_management.service.DepartmentService;
+import com.greenart.school_management.utils.AESAlgorithm;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.lang.Nullable;
@@ -18,9 +19,12 @@ public class DepartmentController {
     public String getDepartment(
         Model model, @RequestParam @Nullable Integer offset,
         @RequestParam @Nullable String keyword
-        ){
+        ) throws Exception {
         Map<String, Object> resultMap = service.getDepartmentList(offset, keyword);
         model.addAttribute("data", resultMap);
+
+        if(keyword != null)
+            System.out.println(AESAlgorithm.Encrypt(keyword));
         return "/department/list";
     }
 }
